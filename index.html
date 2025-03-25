@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memcached Performance Comparison</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking CSS -->
+</head>
+<body>
+
+    <h1>Memcached Performance Comparison</h1>
+
+    <!-- Latency Graph -->
+    <canvas id="latencyChart"></canvas>
+
+    <!-- Display the Dataset Used in the Graph -->
+    <div class="data-output">
+        <div class="data-item">
+            <p><strong>Without RCS/CTI:</strong> 10ms → 500ms (failure) → 250ms</p>
+        </div>
+        <div class="data-item">
+            <p><strong>With RCS/CTI:</strong> 10ms → 300ms (failure) → 120ms</p>
+        </div>
+    </div>
+
+    <script src="script.js defer"></script> <!-- Linking JavaScript -->
+</body>
+</html>
