@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Graph */
+canvas {
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+}
+
+/* Dataset Display */
+.data-output {
+    display: flex;
+    justify-content: space-between; /* Space out the items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allows wrapping of content if the screen is too narrow */
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+}
+
+/* Data Item Styling */
+.data-item {
+    display: flex;
+    flex-direction: column; /* Stack text above image */
+    align-items: center; /* Center text and image horizontally */
+    flex: 1 1 45%; /* Ensure each item takes up 45% of container's width */
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    text-align: center;
+}
+
+/* Add some spacing between text and image */
+.data-item p {
+    margin-bottom: 10px; /* Add space between text and image */
+}
+
+/* Image Styling */
+.data-item img {
+    max-width: 100%; /* Scale images to fit the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Optional: To prevent images from being too big */
+.data-item img {
+    max-width: 90%; /* Prevent images from becoming too large */
+}
